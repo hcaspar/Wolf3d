@@ -1,4 +1,4 @@
-#******************************************************************************#
+# **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
@@ -6,9 +6,9 @@
 #    By: hcaspar <hcaspar@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/04/05 20:38:46 by hcaspar           #+#    #+#              #
-#    Updated: 2017/01/14 15:06:17 by hcaspar          ###   ########.fr        #
+#    Updated: 2017/08/24 14:23:28 by hcaspar          ###   ########.fr        #
 #                                                                              #
-#******************************************************************************#
+# **************************************************************************** #
 
 NAME = wolf3d
 
@@ -20,7 +20,7 @@ OBJS = $(SRCS:.c=.o)
 CFLAGS = -Wall -Werror -Wextra -I includes/
 
 FLAGS = $(CFLAGS) -L libft/ -lft \
-		-L /usr/local/lib/ -lmlx -framework OpenGL -framework AppKit
+		-L mlx/ -lmlx -framework OpenGL -framework AppKit
 
 CC = gcc
 
@@ -30,6 +30,7 @@ $(NAME) : $(OBJS)
 	gcc $(CFLAGS) $(FLAGS) $(OBJS) -o $(NAME)
 
 lib :
+	make -C mlx/
 	make -C libft/
 
 clean :
@@ -37,6 +38,7 @@ clean :
 	rm -f $(OBJS)
 
 fclean : clean
+	make -C mlx/ clean
 	make -C libft/ fclean
 	rm -f $(NAME)
 

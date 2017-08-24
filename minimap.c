@@ -6,7 +6,7 @@
 /*   By: hcaspar <hcaspar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/08 10:26:31 by hcaspar           #+#    #+#             */
-/*   Updated: 2017/01/11 14:58:46 by hcaspar          ###   ########.fr       */
+/*   Updated: 2017/08/24 14:26:53 by hcaspar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,11 @@ void			draw_player(t_mlx *data, int i, int j)
 		while (x != BLOCK_SIZE - BLOCK_SIZE / 4)
 		{
 			data->minimap.string[(x + i * BLOCK_SIZE) * 4 + \
-					(y + j * BLOCK_SIZE) * data->minimap.size_line] = 255;
+					(y + j * BLOCK_SIZE) * data->minimap.size_line] = 127;
 			data->minimap.string[(x + i * BLOCK_SIZE) * 4 + \
-					(y + j * BLOCK_SIZE) * data->minimap.size_line + 1] = 255;
+					(y + j * BLOCK_SIZE) * data->minimap.size_line + 1] = 127;
 			data->minimap.string[(x + i * BLOCK_SIZE) * 4 + \
-					(y + j * BLOCK_SIZE) * data->minimap.size_line + 2] = 255;
+					(y + j * BLOCK_SIZE) * data->minimap.size_line + 2] = 127;
 			data->minimap.string[(x + i * BLOCK_SIZE) * 4 + \
 					(y + j * BLOCK_SIZE) * data->minimap.size_line + 3] = 0;
 			x++;

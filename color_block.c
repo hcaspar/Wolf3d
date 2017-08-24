@@ -6,7 +6,7 @@
 /*   By: hcaspar <hcaspar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/01 13:31:53 by hcaspar           #+#    #+#             */
-/*   Updated: 2017/01/14 16:10:15 by hcaspar          ###   ########.fr       */
+/*   Updated: 2017/08/24 14:25:43 by hcaspar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ void		draw_square_blue(t_mlx *data, int i, int j)
 		while (x < BLOCK_SIZE)
 		{
 			data->minimap.string[(x + i * BLOCK_SIZE) * 4 + \
-					(y + j * BLOCK_SIZE) * data->minimap.size_line] = 255;
+					(y + j * BLOCK_SIZE) * data->minimap.size_line] = 127;
 			data->minimap.string[(x + i * BLOCK_SIZE) * 4 + \
 					(y + j * BLOCK_SIZE) * data->minimap.size_line + 1] = 0;
 			data->minimap.string[(x + i * BLOCK_SIZE) * 4 + \
@@ -81,7 +81,7 @@ void		draw_square_red(t_mlx *data, int i, int j)
 			data->minimap.string[(x + i * BLOCK_SIZE) * 4 + \
 					(y + j * BLOCK_SIZE) * data->minimap.size_line + 1] = 0;
 			data->minimap.string[(x + i * BLOCK_SIZE) * 4 + \
-					(y + j * BLOCK_SIZE) * data->minimap.size_line + 2] = 255;
+					(y + j * BLOCK_SIZE) * data->minimap.size_line + 2] = 127;
 			data->minimap.string[(x + i * BLOCK_SIZE) * 4 + \
 					(y + j * BLOCK_SIZE) * data->minimap.size_line + 3] = 0;
 			x++;
@@ -104,9 +104,9 @@ void		draw_square_yellow(t_mlx *data, int i, int j)
 			data->minimap.string[(x + i * BLOCK_SIZE) * 4 + \
 					(y + j * BLOCK_SIZE) * data->minimap.size_line] = 0;
 			data->minimap.string[(x + i * BLOCK_SIZE) * 4 + \
-					(y + j * BLOCK_SIZE) * data->minimap.size_line + 1] = 255;
+					(y + j * BLOCK_SIZE) * data->minimap.size_line + 1] = 127;
 			data->minimap.string[(x + i * BLOCK_SIZE) * 4 + \
-					(y + j * BLOCK_SIZE) * data->minimap.size_line + 2] = 255;
+					(y + j * BLOCK_SIZE) * data->minimap.size_line + 2] = 127;
 			data->minimap.string[(x + i * BLOCK_SIZE) * 4 + \
 					(y + j * BLOCK_SIZE) * data->minimap.size_line + 3] = 0;
 			x++;
@@ -129,7 +129,7 @@ void		draw_square_green(t_mlx *data, int i, int j)
 			data->minimap.string[(x + i * BLOCK_SIZE) * 4 + \
 					(y + j * BLOCK_SIZE) * data->minimap.size_line] = 0;
 			data->minimap.string[(x + i * BLOCK_SIZE) * 4 + \
-					(y + j * BLOCK_SIZE) * data->minimap.size_line + 1] = 255;
+					(y + j * BLOCK_SIZE) * data->minimap.size_line + 1] = 127;
 			data->minimap.string[(x + i * BLOCK_SIZE) * 4 + \
 					(y + j * BLOCK_SIZE) * data->minimap.size_line + 2] = 0;
 			data->minimap.string[(x + i * BLOCK_SIZE) * 4 + \

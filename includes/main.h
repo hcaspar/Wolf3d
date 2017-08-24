@@ -6,7 +6,7 @@
 /*   By: hcaspar <hcaspar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/25 11:56:40 by hcaspar           #+#    #+#             */
-/*   Updated: 2017/01/14 16:04:53 by hcaspar          ###   ########.fr       */
+/*   Updated: 2017/08/24 14:22:44 by hcaspar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include "../libft/includes/libft.h"
 # include "../includes/get_next_line.h"
 # include "keys.h"
-# include <mlx.h>
+# include "../mlx/mlx.h"
 # include <stdlib.h>
 # include <fcntl.h>
 # include <math.h>
